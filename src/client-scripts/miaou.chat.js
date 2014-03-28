@@ -2,7 +2,7 @@ var miaou = miaou || {};
 
 miaou.chat = {
 	MAX_AGE_FOR_EDIT: 5000, // seconds (should be coherent with server settings)
-	DELAY_BEFORE_PROFILE_POPUP: 300, // ms
+	DELAY_BEFORE_PROFILE_POPUP: 0, // ms
 	DISRUPTION_THRESHOLD: 60*60, // seconds
 	nbUnseenMessages: 0, oldestUnseenPing: 0, lastReceivedPing: 0,
 	timeOffset: 0, enterTime: 0 // both in seconds since epoch, server time

@@ -307,6 +307,11 @@ body.mobile #users .user {
 	min-height: 24px;
 	color: black;
 	background: $profile-bg-color;
+	opacity: 0;
+  	&.opaque {
+		opacity: 1;
+		transition: all 3s ease;
+	}
 	h1 {
 		width: 100%;
 		text-align: center;
@@ -322,6 +327,7 @@ body.mobile #users .user {
 .user.profiled {
 	box-shadow: 2px 2px 2px #999;
 	background: $profile-bg-color;
+	transition: all 3s ease;
 }
 
 body.mobile #messagescroller {

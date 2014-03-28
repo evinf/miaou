@@ -35,6 +35,10 @@ miaou.userProfile = {
 			if ((data = $user.data('user') || (data = $message.data('user')))) userId = data.id;
 			else userId = $message.data('message').author;
 			$p.load('publicProfile?user='+userId+'&room='+room.id);
+			setTimeout(function(){
+				$p.addClass('opaque');
+				$user.addClass('opaque');
+			}, 0);
 		}).bind(this), miaou.chat.DELAY_BEFORE_PROFILE_POPUP);
 	},
 	hide: function(){

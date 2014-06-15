@@ -407,7 +407,7 @@ body.mobile #messagescroller {
 	.decoration {
 		font-family: "fontello";
 		margin: 2px;
-		-webkit-flex 0 0 15px;
+		-webkit-flex: 0 0 15px;
 		flex: 0 0 15px;
 		cursor: default;
 		color: #aaa;
@@ -603,7 +603,7 @@ code {
 	width:100%;
 	-webkit-flex-basis: $input-height + 10px;
 	flex-basis:  $input-height + 10px;
-	-webkit-grow 0;
+	-webkit-grow: 0;
 	flex-grow: 0;
 }
 #autocompleter,  {
